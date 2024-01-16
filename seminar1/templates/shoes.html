@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2 class="section-title title">Категория: Обувь</h2>
+    <div class="section_items">
+        {% for shoes in shoes %}
+        <div class="section-item">
+            <img src="{{ shoes.img_url }}" alt="clothes" class="section_clothes-img">
+            <h1 class="title">{{ shoes.title }}</h1>
+            <p class="desc">{{ shoes.desc }}</p>
+        </div>
+        {% endfor %}
+{% endblock %}

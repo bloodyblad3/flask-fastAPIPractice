@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/styles/style.css') }}">
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">SHOP</h1>
+        <nav>
+            <ul class="menu">
+                <li><a class="menu-item" href="/">Главная</a></li>
+                <li><a class="menu-item" href="/clothing">Одежда</a></li>
+                <li><a class="menu-item" href="/jacket">Куртки</a></li>
+                <li><a class="menu-item" href="/shoes">Обувь</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="adverstiment">
+        <h1 class="title">ЗДЕСЬ МОГЛА БЫТЬ ВАША РЕКЛАМА</h1>
+    </section>
+
+    <section class="section base_cont">
+        {% block content %}{% endblock %}
+    </section>
+
+    <footer class="footer">
+        <p class="desc">&copy; 2024 Shop.</p>
+    </footer>
+</body>
+</html>
