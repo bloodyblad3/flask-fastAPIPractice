@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "EncodeSans-Regular";
+    src: url(../fonts/EncodeSans-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Encode Sans-Medium";
+    src: url(../fonts/EncodeSans-Medium.ttf);
+    font-weight: 500;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.base_cont {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    color: #000;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.desc {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 35px 100px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.menu-item {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.adverstiment {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    text-align: start;
+    margin-bottom: 30px;
+}
+
+.section_items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.section-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    padding: 20px 12px;
+    gap: 8px;
+    background-color: #f0f0f0;
+}
+
+.section-item:hover {
+    box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+}
+
+.section_clothes-img {
+    position: relative;
+    max-width: 100%;
+    height: 325px;
+}
+
+.footer {
+    margin: 0 50px 40px;
+    display: flex;
+    justify-content: end;
+}
