@@ -1,0 +1,11 @@
+{% extends 'index.html' %}
+
+{% block title %}login{% endblock %}
+
+{% block content %}
+    <form method="post">
+        <input type="text" name="username" id="input_name" class="form-name_input" required placeholder="Enter your name">
+        <input type="email" name="email" id="input_email" class="form-email_input" required placeholder="Enter your email">
+        <button class="form-button_submit" type="submit">Отправить</button>
+    </form>
+    {% endblock %}

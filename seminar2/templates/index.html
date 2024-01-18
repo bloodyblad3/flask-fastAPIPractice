@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}hello{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/styles/style.css') }}">
+</head>
+<body>
+    <section class="hello">
+        {% block content %}
+        <div class="hello-title">Hello, {{ username }} <br>
+            <span class="hello-desc">This is your email - {{ email }}</span>
+        </div>
+        <a href="{{ url_for('logout') }}"><button class="logout-button" type="submit">Выйти</button></a> 
+        {% endblock %}
+    </section>
+</body>
+</html>
