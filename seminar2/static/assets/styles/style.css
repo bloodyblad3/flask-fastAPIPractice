@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "EncodeSans-Regular";
+    src: url(../fonts/EncodeSans-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Encode Sans-Medium";
+    src: url(../fonts/EncodeSans-Medium.ttf);
+    font-weight: 500;
+}
+
+.hello {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hello-title {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.form-button_submit {
+    background: #F25822;
+    border-radius: 32px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: normal;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+}
+
+.logout-button {
+    background: #F25822;
+    border-radius: 32px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: normal;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+}
