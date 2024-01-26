@@ -1,0 +1,16 @@
+{% extends 'index.html' %}
+
+{% block title %}User List{% endblock %}
+
+{% block content %}
+<section class="user_list">
+    <h1 class="list-title">User List</h1>
+    {% for user in users %}
+    <ul class="user_info">
+        <div class="user_id text">User {{ user.id }}</div>
+        <li class="user_fullname text">user fullname > {{ user.first_name, user.last_name }}</li>
+        <li class="user_email text">user email > {{ user.email }}</li>
+    </ul>
+    {% endfor %}
+</section>
+{% endblock %}
