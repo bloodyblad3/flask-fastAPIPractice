@@ -3,7 +3,7 @@ import sqlalchemy
 import random
 from datetime import datetime
 from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 from typing import List
 
 DATABASE_URL = "sqlite:///shop.db"
